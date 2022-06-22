@@ -2,7 +2,7 @@ let named = document.querySelector(".app-name");
 let btn = document.querySelector(".create");
 let tabla = document.querySelector(".tblDatos");
 const passwordgenerator = () => {
-    if (alreadythere(named.value) == false) {
+    if (alreadythere(named.value) == false  ) {
         const banco = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         const a = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         const b = "abcdefghijklmnopqrstuvwxyz";
@@ -32,6 +32,10 @@ const addinfo = () => {
 }
 
 const alreadythere = (namee) => {
+    if(!namee){
+        alert('El campo de app debe estar lleno');
+        return true;
+    }
     if (datos.length == 0) {
         return false;
     }
