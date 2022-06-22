@@ -21,7 +21,7 @@ const alreadythere = (namee) => {
     }
     for (let i = 0; i < n.length; i++) {
         if (n[i].name == namee) {
-            console.log('ya existe generada una contraseña para esta aplicacion y es: ', n[i].password)
+            console.log('ya existe generada una contraseña para la aplicación ',n[i].name,'y es:',  n[i].password)
             return true;
         }
     }
@@ -29,7 +29,7 @@ const alreadythere = (namee) => {
 
 }
 
-let i = 0;
+
 let app = {
     name: '',
     password: ''
